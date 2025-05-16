@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Site</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #a0e8f0, #d1c4f0);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #5e3ba2;
+            color: white;
+            padding: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .sobre-mim {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .sobre-mim h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .sobre-mim p {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .galeria {
+            margin-top: 20px;
+        }
+
+        .galeria h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .imagens {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .imagens div {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .imagens div:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+
+        .imagens img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid #ccc;
+        }
+
+        .imagens p {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Meu Site</h1>
+    </header>
+
+    <section class="sobre-mim">
+        <h2>(づ￣ ³￣)づ 🧢 <strong>Sobre Mim</strong></h2>
+        <p>☁✉⋅｡⋅ hello... Meu nome é Leandro, sou estudante, adoro coisas sobre moda e coisas sobre heróis ☁✉⋅｡⋅...</p>
+        <p>⋅☾✿⋅ Atualmente meu sonho é ser designer de moda ✨⋆｡⋅</p>
+        <p>✎ Estou sempre buscando aprender mais sobre moda e me atualizando às tendências. 🧵</p>
+    </section>
+
+    <section class="galeria">
+        <h2>Galeria</h2>
+        <div class="imagens">
+            <div>
+                <img src="img1.png" alt="Imagem 1">
+                <p>Imagem 1</p>
+            </div>
+            <div>
+                <img src="img2.png" alt="Imagem 2">
+                <p>Imagem 2</p>
+            </div>
+            <div>
+                <img src="img3.png" alt="Imagem 3">
+                <p>Imagem 3</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
